@@ -1,12 +1,12 @@
 name: Deploy ARM Template
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
+  #push:
+    #branches:
+      #- master
+     schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/5 * * * *'
+      - cron:  '*/2 * * * *'
     
 env:
   AZURE_SUBSCRIPTION_ID: c31a93aa-4602-46b4-844d-0ef872ff7074   # set this to your Azure Subscription Id
